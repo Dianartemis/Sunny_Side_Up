@@ -1,4 +1,4 @@
-# Project Name by Sunny Side Up
+# Monopoly Deal by Sunny Side Up
 
 ## Roles
 * Diana Akhmedova (PM) - placeholder
