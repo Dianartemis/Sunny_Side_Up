@@ -33,3 +33,12 @@ dianaA, samanthaH, nicholasT, faizaH -- 2023-05-31 21:09
 --------------------------------------------------------------
 * Finished design doc.
 ==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-03 23:00
+--------------------------------------------------------------
+* Updated design doc.
+* Created property, action, money, player, and deck classes.
+* Added functionality for creating a deck, drawing cards, and shuffling cards.
+* Added functionality for charging rent and checking if a player won.
+==============================================================
+

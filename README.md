@@ -1,16 +1,13 @@
 # Monopoly Deal by Sunny Side Up
 
 ## Roles
-* Diana Akhmedova (PM) - Cards, Graphics in JS
-* Samantha Hua - Cards, Graphics in JS
-* Nicholas Tarsis - Droplet, Databases
-* Faiza Huda - Implementing cards with game rules, Login system
+* Diana Akhmedova(PM) - Cards, Graphics in JS
+* Samantha Hua - Cards, Join button
+* Nicholas Tarsis - Droplet, Graphics in JS
+* Faiza Huda - Implementing cards with game rules, Join button
 
 ## Description of Website/App
 * Sunny Side Up will recreate the multiplayer, turn-based card game Monopoly Deal. Following the rules of the official game, we will implement Node.js to support real-time gaming between players.
-
-## APIs Used
-* placeholder
 
 ## Launch Codes
 ### How to Clone/Install
