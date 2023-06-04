@@ -34,6 +34,16 @@ dianaA, samanthaH, nicholasT, faizaH -- 2023-05-31 21:09
 * Finished design doc.
 ==============================================================
 
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-03 21:41
+--------------------------------------------------------------
+* Summary of Feedback Round:
+    * There is not much of a purpose in having the user make an account,
+      so we should either add leaderboards or remove accounts as a feature.
+    * We should explain why we are using Bootstrap.
+    * We should figure out how to make the graphics in JS and how the game
+      information would be stored.
+==============================================================
+
 dianaA, samanthaH, nicholasT, faizaH -- 2023-06-03 23:00
 --------------------------------------------------------------
 * Updated design doc.
@@ -41,4 +51,3 @@ dianaA, samanthaH, nicholasT, faizaH -- 2023-06-03 23:00
 * Added functionality for creating a deck, drawing cards, and shuffling cards.
 * Added functionality for charging rent and checking if a player won.
 ==============================================================
-
