@@ -1,0 +1,53 @@
+<!-- One giant html page to serve it all -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MONOPOLY DEAL</title>
+</head>
+
+<body>
+    <div id="gameTable">
+
+    </div>
+
+    <!-- When the page loads for the first time this will pop up -->
+    <script id="home-screen" type="text/templates">
+        <div>
+            <button id="joinBotton">Join</button>
+            <button id="createButton">Create</button>
+        </div>
+    </script>
+
+    <!-- When the user clicks on the create button this will pop up -->
+    <script id="create-game" type="text/templates">
+        <div id="NewGameCode"> DNE</div>
+    </script>
+
+    <!-- When the user clicks on the join button this will pop up -->
+    <script id="join-game" type="text/templates">
+        <div>
+            <label for inputPlayerName">Your Name:</label>
+            <input type="text" id="inputPlayerName" />
+        </div>
+
+        <div>
+            <label for inputGameId">Game ID:</label>
+            <input type="text" id="inputGameId" />
+        </div>
+
+        <div>
+            <button id="joinGame">Join Game</button>
+        </div>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- app.js is where all the client-side Anagrammatix game logic -->
+    <script src="index.js"></script>
+</body>
+
+</html>
