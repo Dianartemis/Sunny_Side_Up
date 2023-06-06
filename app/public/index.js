@@ -61,6 +61,7 @@ jQuery(function($) {
         bindEvents: function() {
             Index.$doc.on('click', '#createButton', Index.Host.onCreateClick);
             Index.$doc.on('click', '#joinButton', Index.Player.onJoinClick);
+            Index.$doc.on('click', '#joinGame', Index.Player.onPlayerStartClick)
         },
 
         // show the initial screen
@@ -71,7 +72,7 @@ jQuery(function($) {
         // Host object
         Host: {
             players : [],
-            isNexGame: false,
+            isNewGame: false,
             numPlayersInRoom: 0,
 
             // create a new game
@@ -92,11 +93,19 @@ jQuery(function($) {
             // show the screen for the new game with game ID
             displayNewGameScreen: function() {
                 Index.$gameTable.html(Index.$templateCreateGame);
-                Index.$gameTable.html(Index.$templateJoinGame);
 
                 // Display game ID
                 $('#NewGameCode').text(Index.gameId);
             },
+
+            updateWaitingScreen: function(data) {
+                if (Index.Host.isNewGame) {
+                    Index.Host.displayNewGameScreen();
+                }
+
+                $('#playersWaiting').append('<p/>').text('Player ' + data.playerName + ' joined the game.');
+
+            }
         },
 
         // Player object
@@ -107,6 +116,16 @@ jQuery(function($) {
                 console.log("JOIN GAME")
                 Index.$gameTable.html(Index.$templateJoinGame);
             },
+
+            onPlayerStartClick: function() {
+                var data = {
+                    gameId: +($('#inputGameId').val()),
+                    playerName: $('#inputPlayerName').val() || 'anon'
+                };
+                IO.socket.emit('playerJoinGame', data);
+                Index.myRole = 'Player';
+                Index.Player.myName = data.playerName;
+            }
         
         }
     };

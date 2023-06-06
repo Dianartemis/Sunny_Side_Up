@@ -64,3 +64,10 @@ dianaA, samanthaH, nicholasT, faizaH -- 2023-06-03 22:17
 * Got node app to work on all local computers
 * Planned out new plan of using React for frontend
 ==============================================================
+
+faizaH -- 2023-06-06 13:10
+--------------------------------------------------------------
+* Join Button renders form for user to join
+* Start Button generates room code 
+* Code in place for joining room -> cannot test until Droplet
+==============================================================
