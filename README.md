@@ -17,12 +17,7 @@ python -m venv egg
 source egg/bin/activate
 ```
 
-2. Install packages
-```
-pip install -r requirements.txt
-```
-
-3. Clone repo using SSH or HTTPS
+2. Clone repo using SSH or HTTPS
 ```
 git clone git@github.com:Dianartemis/Sunny_Side_Up.git
 ```
@@ -30,13 +25,19 @@ git clone git@github.com:Dianartemis/Sunny_Side_Up.git
 git clone https://github.com/Dianartemis/Sunny_Side_Up.git
 ```
 
+3. Install packages
+```
+cd Sunny_Side_Up
+npm install
+```
+
 ### How to Run
 1. cd into app directory
 ```
 cd app
 ```
-2. Start Flask server 
+2. Start Node server
 ```
-python __init__.py
+node app.js
 ```
-3. Go to ```http://127.0.0.1:5000/``` in browser
+3. Go to ```http://127.0.0.1:3000/``` in browser
