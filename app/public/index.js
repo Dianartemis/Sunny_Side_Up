@@ -92,6 +92,7 @@ jQuery(function($) {
             // show the screen for the new game with game ID
             displayNewGameScreen: function() {
                 Index.$gameTable.html(Index.$templateCreateGame);
+                Index.$gameTable.html(Index.$templateJoinGame);
 
                 // Display game ID
                 $('#NewGameCode').text(Index.gameId);
@@ -103,6 +104,7 @@ jQuery(function($) {
             hostSocketId: '',
             myName: '',
             onJoinClick: function() {
+                console.log("JOIN GAME")
                 Index.$gameTable.html(Index.$templateJoinGame);
             },
         
