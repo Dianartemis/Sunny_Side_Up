@@ -1,0 +1,66 @@
+Sunny Side Up
+Diana Akhmedova
+Samantha Hua
+Nicholas Tarsis
+Faiza Huda
+pd 7
+---------------------
+
+
+ ______   ______   __   __   __       ______   _______
+/_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\
+\:::_ \ \\::::_\/_\:\ \\ \ \\:\ \    \:::_ \ \\::::__\/__
+ \:\ \ \ \\:\/___/\\:\ \\ \ \\:\ \    \:\ \ \ \\:\ /____/\
+  \:\ \ \ \\::___\/_\:\_/.:\ \\:\ \____\:\ \ \ \\:\\_  _\/
+   \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
+    \____/_/ \_____\/ \___/_/   \_____\/ \_____\/ \_____\/
+==============================================================
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+dianaA -- 2023-05-30 13:11
+--------------------------------------------------------------
+* Set up repo.
+* Updated README.md.
+==============================================================
+
+faizaH -- 2023-05-31 00:07
+--------------------------------------------------------------
+* Added flag.
+==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-05-31 21:09
+--------------------------------------------------------------
+* Finished design doc.
+==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-03 21:41
+--------------------------------------------------------------
+* Summary of Feedback Round:
+    * There is not much of a purpose in having the user make an account,
+      so we should either add leaderboards or remove accounts as a feature.
+    * We should explain why we are using Bootstrap.
+    * We should figure out how to make the graphics in JS and how the game
+      information would be stored.
+==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-03 23:00
+--------------------------------------------------------------
+* Updated design doc.
+* Created property, action, money, player, and deck classes.
+* Added functionality for creating a deck, drawing cards, and shuffling cards.
+* Added functionality for charging rent and checking if a player won.
+==============================================================
+
+faizaH -- 2023-06-04 21:00
+--------------------------------------------------------------
+* Set up NodeJS webserver
+* Made initial index.html and necessary JS files
+* Attempted button calls paired with host and player actions
+==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-03 22:17
+--------------------------------------------------------------
+* Got node app to work on all local computers
+* Planned out new plan of using React for frontend
+==============================================================
