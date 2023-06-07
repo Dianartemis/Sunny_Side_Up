@@ -54,20 +54,36 @@ dianaA, samanthaH, nicholasT, faizaH -- 2023-06-03 23:00
 
 faizaH -- 2023-06-04 21:00
 --------------------------------------------------------------
-* Set up NodeJS webserver
-* Made initial index.html and necessary JS files
-* Attempted button calls paired with host and player actions
+* Set up NodeJS webserver.
+* Made initial index.html and necessary JS files.
+* Attempted button calls paired with host and player actions.
 ==============================================================
 
 dianaA, samanthaH, nicholasT, faizaH -- 2023-06-03 22:17
 --------------------------------------------------------------
-* Got node app to work on all local computers
-* Planned out new plan of using React for frontend
+* Got node app to work on all local computers.
+* Planned out new plan of using React for frontend.
 ==============================================================
 
 faizaH -- 2023-06-06 13:10
 --------------------------------------------------------------
-* Join Button renders form for user to join
-* Start Button generates room code 
-* Code in place for joining room -> cannot test until Droplet
+* Join Button renders form for user to join.
+* Start Button generates room code.
+* Code in place for joining room -> cannot test until Droplet.
+==============================================================
+
+dianaA, samanthaH -- 2023-06-06 13:12
+--------------------------------------------------------------
+* Augmented the SSU repo so it could accomodate React code, but this was
+  only done on a branch because the rest of the project was not ready to migrate.
+* Changed package.json for React.
+* Got it to work! :D
+==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-07 00:19
+--------------------------------------------------------------
+* Finished working on the droplet.
+* Got Money.js to integrate with React and generate money cards.
+* Integrated Money.js with Player.js and got a player's bank to render on the screen.
+* Created a plan for how to integrate Socket.io with React and Node.js.
 ==============================================================
