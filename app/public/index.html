@@ -8,25 +8,22 @@
 </head>
 
 <body>
-    <div id="gameTable">
-
-    </div>
-
+    <div id="root"></div>
     <!-- When the page loads for the first time this will pop up -->
-    <script id="home-screen" type="text/templates">
+    <!-- <script id="home-screen" type="text/templates">
         <div>
             <button id="joinBotton">Join</button>
             <button id="createButton">Create</button>
         </div>
     </script>
 
-    <!-- When the user clicks on the create button this will pop up -->
-    <script id="create-game" type="text/templates">
+    When the user clicks on the create button this will pop up -->
+    <!-- <script id="create-game" type="text/templates">
         <div id="NewGameCode"> DNE</div>
-    </script>
+    </script> -->
 
     <!-- When the user clicks on the join button this will pop up -->
-    <script id="join-game" type="text/templates">
+    <!-- <script id="join-game" type="text/templates">
         <div>
             <label for inputPlayerName">Your Name:</label>
             <input type="text" id="inputPlayerName" />
@@ -40,14 +37,17 @@
         <div>
             <button id="joinGame">Join Game</button>
         </div>
-    </script>
-
+    </script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script> -->
+    <!-- <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script> -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
 
     <!-- app.js is where all the client-side Anagrammatix game logic -->
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script type="text/babel" src="../App.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,97 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.yellow {
+  background-color: #f5ecb1;
+}
+
+.coral {
+  background-color: #ebcab5;
+}
+
+.paleGreen {
+  background-color: #dfdebe;
+}
+
+.lightBlue {
+  background-color: #b7ccd9;
+}
+
+.purple {
+  background-color: #a486ac;
+}
+
+.orange {
+  background-color: #ebb850;
+}
+
+
+.monopoly-deal-card {
+  width: 200px;
+  height: 300px;
+  background-color: #f5f5f5;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.monopoly-deal-card h3 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.monopoly-deal-card p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.monopoly-deal-card button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.monopoly-deal-card button:hover {
+  background-color: #0056b3;
+}
+
+.money {
+  height: 300px;
+  width: 200px;
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.money h1 {
+  text-align: center;
+}
+
+.money button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.money button:hover {
+  background-color: #cac1c1;
+}
