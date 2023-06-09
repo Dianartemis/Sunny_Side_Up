@@ -1,11 +1,14 @@
-import React from "react"
-import Money from './money'
+import React from "react";
+
+import Money from './money';
+import Property from './property';
+import Deck from './deck';
+import Action from './action';
 
 export default class Player extends React.Component{
     constructor(props) {
-        super(props)
-        this.state = {name: props.name, hand: [], propertyOnTable: [], bank: {1: 1, 2:3, 3:1, 4:2, 5:1, 10:1}}
-        // propertyOnTable is a 1D array with all of the property the player puts down
+        super(props);
+        this.state = {name: props.name, hand: [<Action type="passGo" />, <Action type="slyDeal" />], propertyOnTable: {"red": 1, "yellow": 0, "orange": 0, "lightGreen": 0, "darkGreen": 0, "lightBlue": 0, "darkBlue": 0, "pink": 0,  "brown": 0, "black": 0}, bank: {1: 1, 2:0, 3:0, 4:0, 5:0, 10:0}};
     };
 
     drawCard(deck, numCards) {
@@ -24,9 +27,28 @@ export default class Player extends React.Component{
         const content = [];
         for (let dollarValue of Object.keys(this.state.bank)) {            
             for (let i=0; i < this.state.bank[dollarValue]; i++ ) {
-                content.push(<Money amount={dollarValue} />)
+                content.push(<Money amount={dollarValue} />);
             }
         }
+        return content;
+    }
+
+    displayPropertyOnTable() {
+        const content = [];
+        for (let color of Object.keys(this.state.propertyOnTable)) {
+            for (let i=0; i < this.state.propertyOnTable[color]; i++) {
+                content.push(<Property color={color} />);
+            }
+        }
+        return content;
+    }
+
+    displayHand() {
+        const content = [];
+        for (let card in this.state.hand) {
+            content.push(this.state.hand[card]);
+        }
+        console.log(content)
         return content;
     }
 
@@ -34,7 +56,13 @@ export default class Player extends React.Component{
         return (
             <>
                 <div className="bank">
-                    <p>{this.displayMoney()}</p>
+                    {this.displayMoney()}
+                </div>
+                <div className="propertyOnTable">
+                    {this.displayPropertyOnTable()}
+                </div>
+                <div className="hand">
+                    {this.displayHand()}
                 </div>
             </>    
         )
@@ -45,70 +73,3 @@ export default class Player extends React.Component{
     // }
 }
 
-// export class Deck extends React.Component{
-//     constructor() {
-//         this.cards = [];
-//         this.createDeck();
-//         this.shuffleDeck();
-//     }
-    
-//     createDeck() {
-//         // money cards
-//         for (let i=0; i<6; i++) {
-//             this.addCard(Money(1));
-//         }
-//         for (let i=0; i<5; i++) {
-//             this.addCard(Money(2));
-//         }
-//         for (let i=0; i<3; i++) {
-//             this.addCard(Money(3));
-//             this.addCard(Money(4));
-//         }
-//         for (let i=0; i<2; i++) {
-//             this.addCard(Money(5));
-//         }
-//         this.addCard(Money(10));
-        
-//         // property cards
-//         for (let i=0; i<3; i++) {
-//             this.addCard(Property("red"));
-//             this.addCard(Property("orange"));
-//             this.addCard(Property("yellow"));
-//             this.addCard(Property("dark green"));
-//             this.addCard(Property("light blue"));
-//             this.addCard(Property("pink"));
-//         }
-//         for (let i=0; i<2; i++) {
-//             this.addCard(Property("light green"));
-//             this.addCard(Property("dark blue"));
-//             this.addCard(Property("brown"));
-//         }
-//         for (let i=0; i<4; i++) {
-//             this.addCard(Property("black"));
-//         }
-        
-//         // action cards
-        
-//     }
-
-//     addCard(card) {
-//         this.cards.push(card);
-//     }
-    
-//     shuffleDeck(cards) {
-//         const shuffledDeck = [...cards];
-//         for (let i = 0; i > 0; i--) {
-//             const j = Math.floor(Math.random() * (i + 1));
-//             [shuffledDeck[i], shuffledDeck[j]] = [shuffledDeck[j], shuffledDeck[i]];
-//         }
-//         return shuffledDeck;
-//     }
-
-//     draw() {
-//         if (this.cards.length <= 0) {
-//             throw new Error("Empty Deck!");
-//         }
-//         const randomIndex = Math.floor(Math.random() * this.cards.length);
-//         return this.cards.splice(randomIndex, 1)[0];
-//     }
-// }

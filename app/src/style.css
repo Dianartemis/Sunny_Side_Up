@@ -72,26 +72,29 @@ a {
   background-color: #0056b3;
 }
 
-.money {
-  height: 300px;
-  width: 200px;
-  border: solid black 2px;
+.money, .property, .action {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.money h1 {
-  text-align: center;
+.money img, .property img, .action img {
+  width: 160px;
 }
 
-.money button {
+.money button, .property button, .action button{
   padding: 8px 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.money button:hover {
+.money button:hover, .property button:hover, .action button:hover {
   background-color: #cac1c1;
+}
+
+.bank, .propertyOnTable, .hand {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
