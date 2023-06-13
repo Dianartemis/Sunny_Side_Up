@@ -1,4 +1,4 @@
-# Monopoly Deal by Sunny Side Up
+# Fun Minigames by Sunny Side Up
 
 ## Roles
 * Diana Akhmedova (PM) - Memory Game
