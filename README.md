@@ -1,7 +1,7 @@
 # Monopoly Deal by Sunny Side Up
 
 ## Roles
-* Diana Akhmedova(PM) - Memory Game
+* Diana Akhmedova (PM) - Memory Game
 * Samantha Hua - War Game
 * Nicholas Tarsis - War Game
 * Faiza Huda - Memory Game
