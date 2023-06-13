@@ -26,7 +26,7 @@ function splitCards(deck) {
 		i+=2;
 	}
 
-	$('.playCount').html("Player cards: " + playerHand.length);
+	$('.playCount').html("Your cards: " + playerHand.length);
 	$('.compCount').html("Moby the Robot's cards: " + compHand.length);
 	$('.result').html("");
 }
@@ -50,7 +50,7 @@ function deal() {
 
 function compare(player, comp) {
 	if((player % 13) > (comp % 13)) {
-		$('.result').html("Tim wins!").animateCss("flipInX");
+		$('.result').html("You win!").animateCss("flipInX");
 		playerHand.push(comp);
 		playerHand.push(player);
 		playerHand.shift();

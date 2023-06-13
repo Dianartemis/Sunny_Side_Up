@@ -1,13 +1,13 @@
 # Monopoly Deal by Sunny Side Up
 
 ## Roles
-* Diana Akhmedova(PM) - Cards, Graphics in JS
-* Samantha Hua - Cards, Join button
-* Nicholas Tarsis - Droplet, Graphics in JS
-* Faiza Huda - Implementing cards with game rules, Join button
+* Diana Akhmedova(PM) - Memory Game
+* Samantha Hua - War Game
+* Nicholas Tarsis - War Game
+* Faiza Huda - Memory Game
 
 ## Description of Website/App
-* Sunny Side Up will recreate the multiplayer, turn-based card game Monopoly Deal. Following the rules of the official game, we will implement Node.js to support real-time gaming between players.
+* Sunny Side Up will recreate the thrilling turn-based card game I Declare War and the fantastically mesmerizing memory games featuring iconic video games. 
 
 ## Launch Codes
 ### How to Clone/Install
@@ -38,6 +38,6 @@ cd app
 ```
 2. Start Node server
 ```
-node app.js
+node index.js
 ```
-3. Go to ```http://127.0.0.1:3000/``` in browser
+3. Go to ```http://localhost:3000/``` in browser

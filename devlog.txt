@@ -87,3 +87,53 @@ dianaA, samanthaH, nicholasT, faizaH -- 2023-06-07 00:19
 * Integrated Money.js with Player.js and got a player's bank to render on the screen.
 * Created a plan for how to integrate Socket.io with React and Node.js.
 ==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-08 20:48
+--------------------------------------------------------------
+* Converted node code into react code.
+* Attempted socket in react -> big fail -> no interfile emits.
+==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-09 01:01
+--------------------------------------------------------------
+* Tried to display monopoly deal images.
+* Did a workaround to create JS "subclasses" for different cards.
+* Added nested classes.
+* Merged testingReact + NodeReact branches.
+* Fixed generating game codes for different rooms.
+==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-10 02:11
+--------------------------------------------------------------
+* Attempted multiplayer w/socket.io.
+==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-11 19:48
+--------------------------------------------------------------
+* Multiplayer works!
+* Buttons work!
+* Changed nested classes to subclasses.
+==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-12 01:19
+--------------------------------------------------------------
+* Hardcoded properties into dictionary for deck functionality.
+* Gave up on Monopoly Deal.
+* New vision => minigames.
+==============================================================
+
+dianaA nicholasT -- 2023-06-12 12:50
+--------------------------------------------------------------
+* Added images for memory game.
+==============================================================
+
+dianaA, samanthaH, nicholasT, faizaH -- 2023-06-13 00:44
+--------------------------------------------------------------
+* Made War game and memory game with images and *animation* partially kinda.
+* Added card deck images and bootstrap buttons.
+* Added bootstrap and CSS.
+* Fixed routes and made app to host them using JS.
+* Updated devlog.
+* Updated requirements.
+* Updated design doc.
+==============================================================
