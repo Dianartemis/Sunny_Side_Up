@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" contingent="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>War Card Game</title>
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src='js/WarGame.js'></script>
+
+		<link rel="stylesheet" type="text/css" href="css/Animate.css">
+		<link rel="stylesheet" type="text/css" href="css/WarGame.css">
+	</head>
+
+	<body onload="play()">
+		<div class='jumbotron' id='jumbotron'>
+			<h1 class='animated flipInX'>I Declare War!</h1>
+		</div>
+
+		<button class="btn btn-primary" id="home" style="width: 15cm;"onClick="location.href = '/';">You're really going to let those plebs live huh? Turns out you were the real pleb all along.</button>
+
+		<div id="boardwrap">
+			<div id="warAnimation" class="war"><div id="warText">WAR!!!</div></div>
+			<div id="warArea" style='display: none;'>
+				<div class='playerWarFinal'></div>
+				<div class='playerWarCards'></div>
+				<div class='compWarCards'></div>
+				<div class='compWarFinal'></div>
+			</div>
+			
+			<div id='gameboard'>
+				<div id='desktop' class="game animated fadeInUp">
+					<div class="gameHeader">
+						<div class="playCount"></div>
+						<div class="result"></div>
+						<div class="compCount"></div>
+					</div>
+					<div class="gameTable">
+						<div class="playerDeck"><img src="images/gudetama.jpg"></div>
+						<div class="playerCard"></div>
+						<div class="middleGround">
+							<button class="deal" onclick="deal()">DEAL</button><br>
+							<button class="newGame" onclick="location.reload()">NEW GAME</button>
+						</div>
+						<div class="compCard"></div>
+						<div class="compDeck"><img src="images/evil_egg.jpg"></div>
+					</div>
+				</div>
+				<div id='mobile' class="game animated fadeInLeft">
+					<div class="playCount"></div><br>
+					<div class="playerArea">
+						<div class="playerDeck"><img src="images/gudetama.jpg"></div>
+						<div class="playerCard"></div>
+					</div>
+					<div class="result"></div><br>
+					<div class="middleGround">
+						<button class="deal" onclick="deal()">DEAL</button><br>
+						<button class="newGame" onclick="location.reload()">NEW GAME</button>
+					</div><br>
+					<div class="compCount"></div>
+					<div class="compArea">
+						<div class="compDeck"><img src="images/evil_egg.jpg"></div>
+						<div class="compCard"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
